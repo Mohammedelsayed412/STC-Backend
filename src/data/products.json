@@ -1,0 +1,211 @@
+[
+  {
+    "id": 1,
+    "name": "UltraSoft Memory Foam Pillow",
+    "brand": "ComfortRest",
+    "price": 35,
+    "countAvailable": 4,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
+  },
+
+  {
+    "id": 2,
+    "name": "Wireless Noise Cancelling Headphones",
+    "brand": "SoundPro",
+    "price": 120,
+    "countAvailable": 4,
+    "image": "https://images.ctfassets.net/hrltx12pl8hq/59YS2RhDvq3GxuGim7w5C/011c2600716e0d63e32c31037b8d8cdf/Metal-and-Stone-Thumbnail.jpg",
+    "isBestSeller": true
+  },
+
+  {
+    "id": 3,
+    "name": "Stainless Steel Water Bottle 1L",
+    "brand": "HydroLife",
+    "price": 18,
+    "countAvailable": 40,
+    "image": "https://images.ctfassets.net/hrltx12pl8hq/7G8oMV6lNcznsPUWNNHvMH/199d649c57652ccc08db23f46a485207/Oct_thumbnail_03.jpg",
+    "isBestSeller": false
+  },
+  {
+    "id": 4,
+    "name": "Ergonomic Office Chair",
+    "brand": "OfficeComfort",
+    "price": 180,
+    "countAvailable": 3,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1rFaHfJMNuk8YeQAk3H-xJACdQsWY5gYIw&s",
+    "isBestSeller": true
+  },
+  {
+    "id": 5,
+    "name": "4K Ultra HD Smart TV 55-inch",
+    "brand": "VisionTech",
+    "price": 600,
+    "countAvailable": 2,
+    "image": "data:image/jpeg;base64,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",
+    "isBestSeller": false
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Fitness Tracker",
+    "brand": "FitGear",
+    "price": 75,
+    "countAvailable": 30,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
+  },
+  {
+    "id": 7,
+    "name": "Luxury Bath Towel Set",
+    "brand": "SoftEssentials",
+    "price": 45,
+    "countAvailable": 50,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
+  },
+  {
+    "id": 8,
+    "name": "Gaming Mouse with RGB Lighting",
+    "brand": "GameX",
+    "price": 50,
+    "countAvailable": 35,
+    "image": "data:image/jpeg;base64,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",
+    "isBestSeller": true
+  },
+  {
+    "id": 9,
+    "name": "Professional Chef Knife 8-inch",
+    "brand": "KitchenPro",
+    "price": 65,
+    "countAvailable": 20,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
+  },
+  {
+    "id": 10,
+    "name": "Portable Electric Air Compressor",
+    "brand": "AutoCare",
+    "price": 85,
+    "countAvailable": 12,
+    "image": "data:image/jpeg;base64,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",
+    "isBestSeller": true
+  },
+  {
+    "id": 11,
+    "name": "LED Desk Lamp with USB Port",
+    "brand": "BrightHome",
+    "price": 40,
+    "countAvailable": 25,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
+  },
+  {
+    "id": 12,
+    "name": "Compact Travel Backpack",
+    "brand": "WanderEase",
+    "price": 55,
+    "countAvailable": 18,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
+  },
+  {
+    "id": 13,
+    "name": "Stainless Steel Cookware Set",
+    "brand": "ChefMate",
+    "price": 220,
+    "countAvailable": 8,
+    "image": "data:image/jpeg;base64,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",
+    "isBestSeller": true
+  },
+  {
+    "id": 14,
+    "name": "Dual Monitor Adjustable Stand",
+    "brand": "DeskPro",
+    "price": 95,
+    "countAvailable": 11,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
+  },
+  {
+    "id": 15,
+    "name": "Smart Wi-Fi LED Light Bulbs",
+    "brand": "BrightLife",
+    "price": 30,
+    "countAvailable": 60,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1rFaHfJMNuk8YeQAk3H-xJACdQsWY5gYIw&s",
+    "isBestSeller": true
+  },
+  {
+    "id": 16,
+    "name": "Noise-Cancelling Earbuds",
+    "brand": "SoundPulse",
+    "price": 90,
+    "countAvailable": 25,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
+  },
+  {
+    "id": 17,
+    "name": "Non-Stick Frying Pan 12-inch",
+    "brand": "CookEasy",
+    "price": 35,
+    "countAvailable": 22,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1rFaHfJMNuk8YeQAk3H-xJACdQsWY5gYIw&s",
+    "isBestSeller": false
+  },
+  {
+    "id": 18,
+    "name": "Adjustable Dumbbell Set",
+    "brand": "FitFlex",
+    "price": 200,
+    "countAvailable": 7,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
+  },
+  {
+    "id": 19,
+    "name": "Wireless Charging Pad",
+    "brand": "ChargePro",
+    "price": 25,
+    "countAvailable": 45,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1rFaHfJMNuk8YeQAk3H-xJACdQsWY5gYIw&s",
+    "isBestSeller": true
+  },
+  {
+    "id": 20,
+    "name": "Anti-Fatigue Kitchen Mat",
+    "brand": "SoftSteps",
+    "price": 50,
+    "countAvailable": 20,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
+  },
+  {
+    "id": 21,
+    "name": "Dual Monitor Adjustable Stand",
+    "brand": "DeskPro",
+    "price": 95,
+    "countAvailable": 11,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
+  },
+  {
+    "id": 22,
+    "name": "Smart Wi-Fi LED Light Bulbs",
+    "brand": "BrightLife",
+    "price": 30,
+    "countAvailable": 60,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1rFaHfJMNuk8YeQAk3H-xJACdQsWY5gYIw&s",
+    "isBestSeller": true
+  },
+  {
+    "id": 23,
+    "name": "Noise-Cancelling Earbuds",
+    "brand": "SoundPulse",
+    "price": 90,
+    "countAvailable": 25,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
+  }
+]
