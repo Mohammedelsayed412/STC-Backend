@@ -20,51 +20,52 @@ export const getCartProducts = (): ICartProduct[] => {
   ensureCartFileExists();
   const cart: ICart = JSON.parse(fs.readFileSync(cartFilePath, "utf-8"));
 
-  return cart.items.map((cartItem: ICartItem) => {
-    const product = products.find((product: IProduct) => product.id === cartItem.productId);
+  return cart.items
+    .map((cartItem: ICartItem) => {
+      const product = products.find(
+        (product: IProduct) => product.id === cartItem.id
+      );
 
-    if (product) {
-      return {
-        ...product,
-        quantity: cartItem.quantity,
-      };
-    }
-    return null;
-  }).filter(item => item !== null) as ICartProduct[];
+      if (product) {
+        return {
+          ...product,
+          quantity: cartItem.quantity,
+        };
+      }
+      return null;
+    })
+    .filter((item) => item !== null) as ICartProduct[];
 };
 
-const validateProductIds = (items: ICartItem[]): boolean => {
-  return items.every((item) => products.some((product: IProduct) => product.id === item.productId));
+const validateids = (items: ICartItem[]): boolean => {
+  return items.every((item) =>
+    products.some((product: IProduct) => product.id === item.id)
+  );
 };
-
 export const editCart = (items: ICartItem[]): ICart => {
-  if (!validateProductIds(items)) {
+  if (!Array.isArray(items)) {
+    throw new Error("Invalid input: items must be an array.");
+  }
+
+  if (items.length > 0 && !validateids(items)) {
     throw new Error("One or more product IDs are invalid.");
   }
 
   ensureCartFileExists();
-  const cart: ICart = JSON.parse(fs.readFileSync(cartFilePath, "utf-8"));
 
-  items.forEach((item) => {
-    const cartItemIndex = cart.items.findIndex((cartItem) => cartItem.productId === item.productId);
-    
-    if (cartItemIndex !== -1) {
-      cart.items[cartItemIndex].quantity = item.quantity;
-    } else {
-      cart.items.push(item);
-    }
-  });
+  const newCart: ICart = { items };
+  fs.writeFileSync(cartFilePath, JSON.stringify(newCart, null, 2));
 
-  fs.writeFileSync(cartFilePath, JSON.stringify(cart, null, 2));
-
-  return cart;
+  return newCart;
 };
 
 export const checkout = (): string => {
   ensureCartFileExists();
   const cart: ICart = JSON.parse(fs.readFileSync(cartFilePath, "utf-8"));
   const outOfStockItems = cart.items.filter((cartItem) => {
-    const product = products.find((product: IProduct) => product.id === cartItem.productId);
+    const product = products.find(
+      (product: IProduct) => product.id === cartItem.id
+    );
     return product ? cartItem.quantity > product.countAvailable : false;
   });
 
@@ -73,13 +74,18 @@ export const checkout = (): string => {
   }
 
   cart.items.forEach((cartItem) => {
-    const product = products.find((product: IProduct) => product.id === cartItem.productId);
+    const product = products.find(
+      (product: IProduct) => product.id === cartItem.id
+    );
     if (product) {
       product.countAvailable -= cartItem.quantity;
     }
   });
 
-  fs.writeFileSync(path.join(__dirname, "../data/products.json"), JSON.stringify(products, null, 2));
+  fs.writeFileSync(
+    path.join(__dirname, "../data/products.json"),
+    JSON.stringify(products, null, 2)
+  );
   fs.writeFileSync(cartFilePath, JSON.stringify({ items: [] }, null, 2));
 
   return "Checkout successful! All items have been processed.";
