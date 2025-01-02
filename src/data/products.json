@@ -4,19 +4,21 @@
     "name": "UltraSoft Memory Foam Pillow",
     "brand": "ComfortRest",
     "price": 35,
-    "countAvailable": 2,
+    "countAvailable": 4,
     "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
     "isBestSeller": true
   },
+
   {
     "id": 2,
     "name": "Wireless Noise Cancelling Headphones",
     "brand": "SoundPro",
     "price": 120,
-    "countAvailable": 1,
+    "countAvailable": 4,
     "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
     "isBestSeller": true
   },
+  
   {
     "id": 3,
     "name": "Stainless Steel Water Bottle 1L",
@@ -40,7 +42,7 @@
     "name": "4K Ultra HD Smart TV 55-inch",
     "brand": "VisionTech",
     "price": 600,
-    "countAvailable": 5,
+    "countAvailable": 2,
     "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
     "isBestSeller": false
   },
