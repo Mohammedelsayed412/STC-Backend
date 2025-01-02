@@ -1,32 +1,49 @@
 import fs from "fs";
 import path from "path";
 import products from "../data/products.json";
+import { IProduct } from "../interfaces/products";
+import { ICart, ICartItem } from "../interfaces/cart";
 
 const cartFilePath = path.join(__dirname, "../data/cart.json");
 
-interface CartItem {
-  productId: number;
+interface ICartProduct extends IProduct {
   quantity: number;
 }
 
-interface Cart {
-  items: CartItem[];
-}
-
-export const getCartProducts = (): Cart => {
-  const cart = JSON.parse(fs.readFileSync(cartFilePath, "utf-8"));
-  return cart;
+const ensureCartFileExists = (): void => {
+  if (!fs.existsSync(cartFilePath)) {
+    fs.writeFileSync(cartFilePath, JSON.stringify({ items: [] }, null, 2));
+  }
 };
 
-const validateProductIds = (items: CartItem[]): boolean => {
-  return items.every((item) => products.some((product) => product.id === item.productId));
+export const getCartProducts = (): ICartProduct[] => {
+  ensureCartFileExists();
+  const cart: ICart = JSON.parse(fs.readFileSync(cartFilePath, "utf-8"));
+
+  return cart.items.map((cartItem: ICartItem) => {
+    const product = products.find((product: IProduct) => product.id === cartItem.productId);
+
+    if (product) {
+      return {
+        ...product,
+        quantity: cartItem.quantity,
+      };
+    }
+    return null;
+  }).filter(item => item !== null) as ICartProduct[];
 };
 
-export const editCart = (items: CartItem[]): Cart => {
+const validateProductIds = (items: ICartItem[]): boolean => {
+  return items.every((item) => products.some((product: IProduct) => product.id === item.productId));
+};
+
+export const editCart = (items: ICartItem[]): ICart => {
   if (!validateProductIds(items)) {
     throw new Error("One or more product IDs are invalid.");
   }
-  const cart = getCartProducts();
+
+  ensureCartFileExists();
+  const cart: ICart = JSON.parse(fs.readFileSync(cartFilePath, "utf-8"));
 
   items.forEach((item) => {
     const cartItemIndex = cart.items.findIndex((cartItem) => cartItem.productId === item.productId);
@@ -44,10 +61,10 @@ export const editCart = (items: CartItem[]): Cart => {
 };
 
 export const checkout = (): string => {
-  const cart = getCartProducts();
-
+  ensureCartFileExists();
+  const cart: ICart = JSON.parse(fs.readFileSync(cartFilePath, "utf-8"));
   const outOfStockItems = cart.items.filter((cartItem) => {
-    const product = products.find((product) => product.id === cartItem.productId);
+    const product = products.find((product: IProduct) => product.id === cartItem.productId);
     return product ? cartItem.quantity > product.countAvailable : false;
   });
 
@@ -56,7 +73,7 @@ export const checkout = (): string => {
   }
 
   cart.items.forEach((cartItem) => {
-    const product = products.find((product) => product.id === cartItem.productId);
+    const product = products.find((product: IProduct) => product.id === cartItem.productId);
     if (product) {
       product.countAvailable -= cartItem.quantity;
     }
