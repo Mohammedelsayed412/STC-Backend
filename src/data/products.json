@@ -1,402 +1,182 @@
 [
   {
     "id": 1,
-    "name": "Product 1",
-    "image": "https://via.placeholder.com/150",
-    "price": 100,
-    "countAvailableInStock": 50,
-    "brand": "Brand A"
+    "name": "UltraSoft Memory Foam Pillow",
+    "brand": "ComfortRest",
+    "price": 35,
+    "countAvailable": 2,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
   },
   {
     "id": 2,
-    "name": "Product 2",
-    "image": "https://via.placeholder.com/150",
-    "price": 200,
-    "countAvailableInStock": 30,
-    "brand": "Brand B"
+    "name": "Wireless Noise Cancelling Headphones",
+    "brand": "SoundPro",
+    "price": 120,
+    "countAvailable": 1,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
   },
   {
     "id": 3,
-    "name": "Product 3",
-    "image": "https://via.placeholder.com/150",
-    "price": 150,
-    "countAvailableInStock": 40,
-    "brand": "Brand A"
+    "name": "Stainless Steel Water Bottle 1L",
+    "brand": "HydroLife",
+    "price": 18,
+    "countAvailable": 40,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
   },
   {
     "id": 4,
-    "name": "Product 4",
-    "image": "https://via.placeholder.com/150",
-    "price": 250,
-    "countAvailableInStock": 60,
-    "brand": "Brand C"
+    "name": "Ergonomic Office Chair",
+    "brand": "OfficeComfort",
+    "price": 180,
+    "countAvailable": 3,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
   },
   {
     "id": 5,
-    "name": "Product 5",
-    "image": "https://via.placeholder.com/150",
-    "price": 300,
-    "countAvailableInStock": 20,
-    "brand": "Brand D"
+    "name": "4K Ultra HD Smart TV 55-inch",
+    "brand": "VisionTech",
+    "price": 600,
+    "countAvailable": 5,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
   },
   {
     "id": 6,
-    "name": "Product 6",
-    "image": "https://via.placeholder.com/150",
-    "price": 120,
-    "countAvailableInStock": 10,
-    "brand": "Brand B"
+    "name": "Bluetooth Fitness Tracker",
+    "brand": "FitGear",
+    "price": 75,
+    "countAvailable": 30,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
   },
   {
     "id": 7,
-    "name": "Product 7",
-    "image": "https://via.placeholder.com/150",
-    "price": 180,
-    "countAvailableInStock": 25,
-    "brand": "Brand A"
+    "name": "Luxury Bath Towel Set",
+    "brand": "SoftEssentials",
+    "price": 45,
+    "countAvailable": 50,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
   },
   {
     "id": 8,
-    "name": "Product 8",
-    "image": "https://via.placeholder.com/150",
-    "price": 400,
-    "countAvailableInStock": 15,
-    "brand": "Brand C"
+    "name": "Gaming Mouse with RGB Lighting",
+    "brand": "GameX",
+    "price": 50,
+    "countAvailable": 35,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
   },
   {
     "id": 9,
-    "name": "Product 9",
-    "image": "https://via.placeholder.com/150",
-    "price": 220,
-    "countAvailableInStock": 45,
-    "brand": "Brand D"
+    "name": "Professional Chef Knife 8-inch",
+    "brand": "KitchenPro",
+    "price": 65,
+    "countAvailable": 20,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
   },
   {
     "id": 10,
-    "name": "Product 10",
-    "image": "https://via.placeholder.com/150",
-    "price": 500,
-    "countAvailableInStock": 5,
-    "brand": "Brand E"
+    "name": "Portable Electric Air Compressor",
+    "brand": "AutoCare",
+    "price": 85,
+    "countAvailable": 12,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
   },
   {
     "id": 11,
-    "name": "Product 11",
-    "image": "https://via.placeholder.com/150",
-    "price": 110,
-    "countAvailableInStock": 35,
-    "brand": "Brand F"
+    "name": "LED Desk Lamp with USB Port",
+    "brand": "BrightHome",
+    "price": 40,
+    "countAvailable": 25,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
   },
   {
     "id": 12,
-    "name": "Product 12",
-    "image": "https://via.placeholder.com/150",
-    "price": 210,
-    "countAvailableInStock": 25,
-    "brand": "Brand A"
+    "name": "Compact Travel Backpack",
+    "brand": "WanderEase",
+    "price": 55,
+    "countAvailable": 18,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
   },
   {
     "id": 13,
-    "name": "Product 13",
-    "image": "https://via.placeholder.com/150",
-    "price": 310,
-    "countAvailableInStock": 20,
-    "brand": "Brand B"
+    "name": "Stainless Steel Cookware Set",
+    "brand": "ChefMate",
+    "price": 220,
+    "countAvailable": 8,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
   },
   {
     "id": 14,
-    "name": "Product 14",
-    "image": "https://via.placeholder.com/150",
-    "price": 90,
-    "countAvailableInStock": 15,
-    "brand": "Brand C"
+    "name": "Dual Monitor Adjustable Stand",
+    "brand": "DeskPro",
+    "price": 95,
+    "countAvailable": 11,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
   },
   {
     "id": 15,
-    "name": "Product 15",
-    "image": "https://via.placeholder.com/150",
-    "price": 450,
-    "countAvailableInStock": 10,
-    "brand": "Brand D"
+    "name": "Smart Wi-Fi LED Light Bulbs",
+    "brand": "BrightLife",
+    "price": 30,
+    "countAvailable": 60,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
   },
   {
     "id": 16,
-    "name": "Product 16",
-    "image": "https://via.placeholder.com/150",
-    "price": 250,
-    "countAvailableInStock": 8,
-    "brand": "Brand E"
+    "name": "Noise-Cancelling Earbuds",
+    "brand": "SoundPulse",
+    "price": 90,
+    "countAvailable": 25,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
   },
   {
     "id": 17,
-    "name": "Product 17",
-    "image": "https://via.placeholder.com/150",
-    "price": 130,
-    "countAvailableInStock": 20,
-    "brand": "Brand F"
+    "name": "Non-Stick Frying Pan 12-inch",
+    "brand": "CookEasy",
+    "price": 35,
+    "countAvailable": 22,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
   },
   {
     "id": 18,
-    "name": "Product 18",
-    "image": "https://via.placeholder.com/150",
-    "price": 140,
-    "countAvailableInStock": 45,
-    "brand": "Brand A"
+    "name": "Adjustable Dumbbell Set",
+    "brand": "FitFlex",
+    "price": 200,
+    "countAvailable": 7,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
   },
   {
     "id": 19,
-    "name": "Product 19",
-    "image": "https://via.placeholder.com/150",
-    "price": 230,
-    "countAvailableInStock": 18,
-    "brand": "Brand B"
+    "name": "Wireless Charging Pad",
+    "brand": "ChargePro",
+    "price": 25,
+    "countAvailable": 45,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": true
   },
   {
     "id": 20,
-    "name": "Product 20",
-    "image": "https://via.placeholder.com/150",
-    "price": 330,
-    "countAvailableInStock": 9,
-    "brand": "Brand C"
-  },
-  {
-    "id": 21,
-    "name": "Product 21",
-    "image": "https://via.placeholder.com/150",
-    "price": 95,
-    "countAvailableInStock": 22,
-    "brand": "Brand D"
-  },
-  {
-    "id": 22,
-    "name": "Product 22",
-    "image": "https://via.placeholder.com/150",
-    "price": 190,
-    "countAvailableInStock": 30,
-    "brand": "Brand E"
-  },
-  {
-    "id": 23,
-    "name": "Product 23",
-    "image": "https://via.placeholder.com/150",
-    "price": 250,
-    "countAvailableInStock": 50,
-    "brand": "Brand F"
-  },
-  {
-    "id": 24,
-    "name": "Product 24",
-    "image": "https://via.placeholder.com/150",
-    "price": 350,
-    "countAvailableInStock": 15,
-    "brand": "Brand A"
-  },
-  {
-    "id": 25,
-    "name": "Product 25",
-    "image": "https://via.placeholder.com/150",
-    "price": 150,
-    "countAvailableInStock": 35,
-    "brand": "Brand B"
-  },
-  {
-    "id": 26,
-    "name": "Product 26",
-    "image": "https://via.placeholder.com/150",
-    "price": 175,
-    "countAvailableInStock": 20,
-    "brand": "Brand C"
-  },
-  {
-    "id": 27,
-    "name": "Product 27",
-    "image": "https://via.placeholder.com/150",
-    "price": 400,
-    "countAvailableInStock": 10,
-    "brand": "Brand D"
-  },
-  {
-    "id": 28,
-    "name": "Product 28",
-    "image": "https://via.placeholder.com/150",
-    "price": 370,
-    "countAvailableInStock": 25,
-    "brand": "Brand E"
-  },
-  {
-    "id": 29,
-    "name": "Product 29",
-    "image": "https://via.placeholder.com/150",
-    "price": 285,
-    "countAvailableInStock": 15,
-    "brand": "Brand F"
-  },
-  {
-    "id": 30,
-    "name": "Product 30",
-    "image": "https://via.placeholder.com/150",
-    "price": 315,
-    "countAvailableInStock": 12,
-    "brand": "Brand A"
-  },
-  {
-    "id": 31,
-    "name": "Product 31",
-    "image": "https://via.placeholder.com/150",
-    "price": 290,
-    "countAvailableInStock": 8,
-    "brand": "Brand B"
-  },
-  {
-    "id": 32,
-    "name": "Product 32",
-    "image": "https://via.placeholder.com/150",
-    "price": 350,
-    "countAvailableInStock": 18,
-    "brand": "Brand C"
-  },
-  {
-    "id": 33,
-    "name": "Product 33",
-    "image": "https://via.placeholder.com/150",
-    "price": 195,
-    "countAvailableInStock": 45,
-    "brand": "Brand D"
-  },
-  {
-    "id": 34,
-    "name": "Product 34",
-    "image": "https://via.placeholder.com/150",
-    "price": 275,
-    "countAvailableInStock": 20,
-    "brand": "Brand E"
-  },
-  {
-    "id": 35,
-    "name": "Product 35",
-    "image": "https://via.placeholder.com/150",
-    "price": 405,
-    "countAvailableInStock": 12,
-    "brand": "Brand F"
-  },
-  {
-    "id": 36,
-    "name": "Product 36",
-    "image": "https://via.placeholder.com/150",
-    "price": 235,
-    "countAvailableInStock": 30,
-    "brand": "Brand A"
-  },
-  {
-    "id": 37,
-    "name": "Product 37",
-    "image": "https://via.placeholder.com/150",
-    "price": 195,
-    "countAvailableInStock": 28,
-    "brand": "Brand B"
-  },
-  {
-    "id": 38,
-    "name": "Product 38",
-    "image": "https://via.placeholder.com/150",
-    "price": 385,
-    "countAvailableInStock": 16,
-    "brand": "Brand C"
-  },
-  {
-    "id": 39,
-    "name": "Product 39",
-    "image": "https://via.placeholder.com/150",
-    "price": 470,
-    "countAvailableInStock": 9,
-    "brand": "Brand D"
-  },
-  {
-    "id": 40,
-    "name": "Product 40",
-    "image": "https://via.placeholder.com/150",
-    "price": 310,
-    "countAvailableInStock": 5,
-    "brand": "Brand E"
-  },
-  {
-    "id": 41,
-    "name": "Product 41",
-    "image": "https://via.placeholder.com/150",
-    "price": 215,
-    "countAvailableInStock": 35,
-    "brand": "Brand F"
-  },
-  {
-    "id": 42,
-    "name": "Product 42",
-    "image": "https://via.placeholder.com/150",
-    "price": 120,
-    "countAvailableInStock": 50,
-    "brand": "Brand A"
-  },
-  {
-    "id": 43,
-    "name": "Product 43",
-    "image": "https://via.placeholder.com/150",
-    "price": 135,
-    "countAvailableInStock": 40,
-    "brand": "Brand B"
-  },
-  {
-    "id": 44,
-    "name": "Product 44",
-    "image": "https://via.placeholder.com/150",
-    "price": 250,
-    "countAvailableInStock": 30,
-    "brand": "Brand C"
-  },
-  {
-    "id": 45,
-    "name": "Product 45",
-    "image": "https://via.placeholder.com/150",
-    "price": 275,
-    "countAvailableInStock": 20,
-    "brand": "Brand D"
-  },
-  {
-    "id": 46,
-    "name": "Product 46",
-    "image": "https://via.placeholder.com/150",
-    "price": 295,
-    "countAvailableInStock": 10,
-    "brand": "Brand E"
-  },
-  {
-    "id": 47,
-    "name": "Product 47",
-    "image": "https://via.placeholder.com/150",
-    "price": 185,
-    "countAvailableInStock": 15,
-    "brand": "Brand F"
-  },
-  {
-    "id": 48,
-    "name": "Product 48",
-    "image": "https://via.placeholder.com/150",
-    "price": 150,
-    "countAvailableInStock": 12,
-    "brand": "Brand A"
-  },
-  {
-    "id": 49,
-    "name": "Product 49",
-    "image": "https://via.placeholder.com/150",
-    "price": 220,
-    "countAvailableInStock": 8,
-    "brand": "Brand B"
-  },
-  {
-    "id": 50,
-    "name": "Product 50",
-    "image": "https://via.placeholder.com/150",
-    "price": 260,
-    "countAvailableInStock": 7,
-    "brand": "Brand C"
+    "name": "Anti-Fatigue Kitchen Mat",
+    "brand": "SoftSteps",
+    "price": 50,
+    "countAvailable": 20,
+    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+    "isBestSeller": false
   }
 ]
